@@ -30,7 +30,7 @@ module.exports = function (config) {
 
   return {
     fetchPublishedCSD: function (oimurl,oimdoc, callback) {
-	 //updateCSDCache()
+	updateCSDCache()
     	let uri = new URI(oimurl)
         .segment('/CSD/pollService/directory/')
         .segment(oimdoc)
