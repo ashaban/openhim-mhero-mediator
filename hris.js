@@ -41,15 +41,9 @@ module.exports = function (config) {
       	url: uri.toString()
     	}
       console.log("Updating Openinfoman CSD Doc" + uri.toString())
-		var done = false
       request(options, function(error, response, body){
-    		done = true
     		console.log(body)
 			});
-		while(!done) {
-			console.log("Helllooooo")
-      require('deasync').runLoopOnce();
-    	}
     }
   }
 }
